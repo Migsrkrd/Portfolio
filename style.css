@@ -98,8 +98,9 @@ article p {
 
 .about-me img {
     float: right;
-    margin: auto;
-    max-width:45%;
+    max-width: 45%;
+    max-height: 77%;
+    margin-right: 6%;
 }
 
 @media screen and (max-width: 500px){
