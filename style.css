@@ -109,20 +109,20 @@ article p {
 
 }
 
-.work {
+#Work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Work h4 {
     color: var(--almond);
     float: left;
     border-right: 5px solid var(--brown);
     font-size: 300%;
-    padding: 50px 100px 600px 100px;
+    padding: 50px 100px 1000px 100px;
     margin: 50px 0 50px 0;
 
-}
-
-#work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .link-images {
@@ -130,29 +130,50 @@ article p {
     flex-direction: column;
     padding: 50px 100px 50px 100px;
     position: relative;
-    filter: grayscale(50%);
-
 }
 
-.link-images:hover {
-    filter: grayscale(0%);
-}
-
-.first, .second {
+#First-Website, #Second-Website {
     position: relative;
-    display: block;
-    border: 5px solid var(--almond);
     margin: 10px;
 }
 
- figure h4{
+#First-Website img, #Second-Website img {
+    border: 5px solid var(--almond);
+    filter: grayscale(50%);
+}
+
+#Second-Website img {
+    margin: 45px 70px 0 0;
+}
+
+#First-Website figcaption{
     position: absolute;
+    font-weight: bolder;
     background-color: var(--brown);
     color: var(--almond);
     border: 5px solid var(--almond);
     padding: 10px;
-    margin: 10px;
+    bottom: 166px;
 }
+
+#Second-Website figcaption{
+    position: absolute;
+    font-weight: bolder;
+    background-color: var(--brown);
+    color: var(--almond);
+    border: 5px solid var(--almond);
+    padding: 10px;
+    bottom: 120px;
+}
+
+#third-sub {
+    left: 445px;
+}
+
+#First-Website img:hover, #Second-Website img:hover {
+    filter: grayscale(0%);
+}
+
 
 @media screen and (max-width: 500px){
     header {
