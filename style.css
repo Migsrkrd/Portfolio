@@ -120,7 +120,7 @@ article p {
     float: left;
     border-right: 5px solid var(--brown);
     font-size: 300%;
-    padding: 50px 100px 1000px 100px;
+    padding: 50px 100px 900px 100px;
     margin: 50px 0 50px 0;
 
 }
@@ -172,6 +172,25 @@ article p {
 
 #First-Website img:hover, #Second-Website img:hover {
     filter: grayscale(0%);
+}
+
+#Resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--brown);
+    max-width: 100%;
+    margin: 100px;
+
+}
+
+#Resume h5 {
+    font-size: 300%;
+    width: 100%;
+    border-bottom: 3px solid var(--almond);
+    border-top: 3px solid var(--almond);
+    margin: 10px;
+    text-align: center;
 }
 
 
