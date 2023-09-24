@@ -181,7 +181,6 @@ article p {
     color: var(--brown);
     max-width: 100%;
     margin: 100px;
-
 }
 
 #Resume h5 {
@@ -193,6 +192,13 @@ article p {
     text-align: center;
 }
 
+Footer {
+    background-color: var(--almond);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    font-size: 200%;
+}
 
 @media screen and (max-width: 500px){
     header {
