@@ -231,13 +231,17 @@ Footer {
         font-size: 200%;
         max-width: auto;
     }
-
     .cover-sub {
         display: flex;
         flex-direction: column;
         flex-shrink: 50%;
         font-size: 60%;
     }
+
+    .about-me img {
+        max-width: 100%;
+    }
+
     .link-images {
         padding:0;
     }
@@ -263,8 +267,8 @@ Footer {
 
 @media screen and (max-width:554px) {
     .about-me img {
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 200px;
+        max-height: 200px;
     }
 }
 
