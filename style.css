@@ -227,6 +227,7 @@ Footer {
         padding: 15px 0;
     }
 
+
     header h1 {
         font-size: 200%;
         max-width: auto;
@@ -244,14 +245,25 @@ Footer {
 
     .link-images {
         padding:0;
+        justify-content: center;
+        align-items: center;
     }
 
     #First-Website {
-        width: 450px;
+        width:360px;
+        padding: 10px 0 10px 0;
+        margin: 0;
+    }
+    #Second-Website img{
+        width:300px;
     }
 
+    #Second-Website {
+        margin: 0;
+        padding: 0 0 10px 0;
+    }
     #Second-Website figcaption {
-        left: 37px;
+        left: 80px;
     }
 
     #Work aside h4 {
@@ -259,11 +271,7 @@ Footer {
         border-bottom: 5px solid var(--brown);
         margin: 0;
     }
-    #Second-Website figcaption {
-        left:50px;
-    }
 }
-
 
 @media screen and (max-width:554px) {
     .about-me img {
@@ -353,9 +361,6 @@ Footer {
 }
 
 @media screen and (max-width:1445px) {
-    #work {
-        flex-direction: column;
-    }
 
     #Work h4 {
         float: none;
