@@ -18,7 +18,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    font-family: monospace;
+    font-family:fantasy;
     display: flex;
     justify-content: space-around;
     padding: 30px 0;
@@ -29,6 +29,7 @@ header {
 header h1 {
     color:var(--almond);
     padding: 0 5px 0 5px;
+    font-size: 250%;
     border-left: 5px solid var(--brown);
     border-right: 5px solid var(--almond);
 }
@@ -38,6 +39,7 @@ header h1 {
 
 header a {
     font-size: 80%;
+    
     color: var(--almond);
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--brown);
@@ -48,6 +50,7 @@ header a {
 header a:hover {
   color: var(--brown);
   box-shadow: inset 200px 0 0 0 var(--almond);
+  font-weight: bolder;
 }
 
 .cover-photo {
@@ -57,10 +60,7 @@ header a:hover {
 }
 
 .cover-photo img {
-    z-index: 1;
     width: 100%;
-    height: auto;
-    display:block;
 }
 
 .cover-sub {
@@ -70,6 +70,8 @@ header a:hover {
     background-color: var(--navy);
     color: var(--almond);
     padding: 10px;
+    border: 5px solid var(--almond);
+    border-radius: 15px;
 }
 
 .about-me {
@@ -88,7 +90,6 @@ header a:hover {
 article h3 {
     color: var(--navy);
     font-size: 200%;
-    text-align: center;
     border-bottom: 2px solid var(--brown);
     margin: 10px 0;
     max-width: 100%;
@@ -98,13 +99,14 @@ article p {
     text-align: left;
     line-height: 1.5;
     max-width: 50%;
-    display:block;
     float: left;
 }
 
 .about-me img {
     max-width: 500px;
     max-height: 500px;
+    border-radius: 15px;
+    border: 5px solid var(--navy);
 
 }
 
@@ -126,7 +128,6 @@ article p {
 
 .link-images {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     padding: 50px 100px 50px 100px;
     position: relative;
@@ -139,6 +140,7 @@ article p {
 
 #First-Website img, #Second-Website img {
     border: 5px solid var(--almond);
+    border-radius: 50px;
     filter: grayscale(50%);
 }
 
@@ -152,6 +154,8 @@ article p {
     background-color: var(--brown);
     color: var(--almond);
     border: 5px solid var(--almond);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     padding: 10px;
     bottom: 166px;
 }
@@ -162,6 +166,8 @@ article p {
     background-color: var(--brown);
     color: var(--almond);
     border: 5px solid var(--almond);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     padding: 10px;
     bottom: 120px;
 }
@@ -172,6 +178,8 @@ article p {
     background-color: var(--brown);
     color: var(--almond);
     border: 5px solid var(--almond);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     padding: 10px;
     bottom: 120px;
     left: 445px;
@@ -215,7 +223,7 @@ Footer {
        padding:15px 0;
     }
     header h1 {
-        font-size: 110%;
+        font-size: 200%;
         max-width: auto;
     }
     .cover-sub {
@@ -261,6 +269,38 @@ Footer {
         align-items: center;
     }
 
+@media screen and (max-width: 825px){
+    #First-Website img {
+        width: 100%;
+        }
+        #First-Website figcaption {
+           margin: 0;
+        }
+        #Second-Website img {
+            margin: 0px 0 0 0px;
+            bottom: 0;
+        }
+        #Second-Website #third-image {
+            margin-top: 10px;
+        }
+        #second-sub {
+            bottom:500px;
+            left: 105px;
+        }
+        #third-sub {
+            left: 105px;
+        } 
+    }
+
+@media screen and (max-width:1051px) {
+        #Second-Website, #Second-Website {
+            text-align: center;
+            margin: 0;
+        }
+       #Second-Website figcaption {
+            margin: 0 0 0 8px;
+        }
+    }
 
 @media screen and (max-width:1220px){
     .about-me {
@@ -292,35 +332,3 @@ Footer {
     }
 }
 
-@media screen and (max-width:1051px) {
-    #Second-Website, #Second-Website {
-        text-align: center;
-        margin: 0;
-    }
-   #Second-Website figcaption {
-        margin: 0 0 0 8px;
-    }
-}
-
-@media screen and (max-width: 825px){
-    #First-Website img {
-        width: 100%;
-    }
-    #First-Website figcaption {
-       margin: 0;
-    }
-    #Second-Website img {
-        margin: 0px 0 0 0px;
-        bottom: 0;
-    }
-    #Second-Website #third-image {
-        margin-top: 10px;
-    }
-    #second-sub {
-        bottom:500px;
-        left: 105px;
-    }
-    #third-sub {
-        left: 105px;
-    } 
-}
