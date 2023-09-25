@@ -82,7 +82,6 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
     max-width: 100%;
 }
 
@@ -127,6 +126,7 @@ article p {
 
 .link-images {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 50px 100px 50px 100px;
     position: relative;
@@ -156,7 +156,7 @@ article p {
     bottom: 166px;
 }
 
-#Second-Website figcaption{
+#second-sub{
     position: absolute;
     font-weight: bolder;
     background-color: var(--brown);
@@ -167,6 +167,13 @@ article p {
 }
 
 #third-sub {
+    position: absolute;
+    font-weight: bolder;
+    background-color: var(--brown);
+    color: var(--almond);
+    border: 5px solid var(--almond);
+    padding: 10px;
+    bottom: 120px;
     left: 445px;
 }
 
@@ -217,7 +224,14 @@ Footer {
         flex-shrink: 50%;
         font-size: 60%;
     }
-}
+    #First-Website {
+        width: 440px;
+    }
+    #Second-Website figcaption {
+        left:37px;
+    }
+    }
+    
 
 @media screen and (max-width:554px){
     .about-me img {
@@ -235,12 +249,18 @@ Footer {
         border-bottom: 2px solid var(--almond);
         border-left: none;
         border-right: none;
-}
+    }
     article p, .about-me img {
         max-width: 100%;
         margin: 0 0 0 0;
     }
-}
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 @media screen and (max-width:1220px){
     .about-me {
@@ -250,16 +270,57 @@ Footer {
         float: none;
         max-width: 500px;
         margin: 0 0 0 0;
-
-
-      
     }
     article p {
         max-width: 100%;
     }
 }
-@media screen and (max-width: 1400){
-    .about-me img {
-        max-width: 30%;
+
+@media screen and (max-width:1445px){
+    #work {
+        flex-direction: column;
     }
+
+    #Work h4 {
+        float: none;
+        border-right: none;
+        border-bottom: 5px solid var(--brown);
+        padding: 10px 300px 10px 300px;
+    }
+    #Second-Website #third-image {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:1051px) {
+    #Second-Website, #Second-Website {
+        text-align: center;
+        margin: 0;
+    }
+   #Second-Website figcaption {
+        margin: 0 0 0 8px;
+    }
+}
+
+@media screen and (max-width: 825px){
+    #First-Website img {
+        width: 100%;
+    }
+    #First-Website figcaption {
+       margin: 0;
+    }
+    #Second-Website img {
+        margin: 0px 0 0 0px;
+        bottom: 0;
+    }
+    #Second-Website #third-image {
+        margin-top: 10px;
+    }
+    #second-sub {
+        bottom:500px;
+        left: 105px;
+    }
+    #third-sub {
+        left: 105px;
+    } 
 }
